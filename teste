@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu com CSS Flexbox</title>
+    
+    <style>
+        /* Estilo para a barra de navegação geral */
+        nav {
+            background-color: #f8f9fa; /* Um fundo cinza bem claro, parecido com a foto */
+            padding: 10px 20px;
+            font-family: Arial, sans-serif; /* Fonte parecida com a original */
+        }
+
+        /* O segredo do alinhamento horizontal está aqui no <ul> */
+        ul {
+            display: flex;             /* Transforma a lista vertical em horizontal */
+            align-items: center;       /* Alinha os textos e a imagem no centro verticalmente */
+            justify-content: center;   /* Centraliza todo o menu na tela */
+            gap: 30px;                 /* Cria o espaçamento exato entre os itens */
+            list-style: none;          /* Remove as "bolinhas" pretas da lista */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilo para os links (os textos clicáveis) */
+        a {
+            text-decoration: none;     /* Remove o sublinhado padrão dos links */
+            color: #0b1953;            /* Azul escuro parecido com o da Uniube */
+            font-weight: bold;         /* Deixa o texto em negrito */
+            font-size: 14px;
+        }
+
+        /* Efeito de passar o mouse por cima (Hover) */
+        a:hover {
+            color: #0056b3;            /* Muda ligeiramente a cor para indicar que é clicável */
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#">SEMIPRESENCIAL ▾</a></li>
+            <li><a href="#">PRESENCIAL ▾</a></li>
+            <li><a href="#">EAD ▾</a></li>
+            <li><a href="#">BENEFÍCIOS ▾</a></li>
+            
+            <li>
+                <a href="#">
+                    <img src="images/uniube-logo-png_seeklogo-409307.webp" alt="Logo Uniube" width="120">
+                </a>
+            </li>
+            
+            <li><a href="#">INSTITUCIONAL ▾</a></li>
+            <li><a href="#">ACADÊMICO ▾</a></li>
+            <li><a href="#">ALUNO ▾</a></li>
+            <li><a href="#">EVENTOS</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>
