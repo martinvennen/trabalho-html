@@ -47,51 +47,82 @@
   </header>
 
   <main>
-    <form action="/enviar-quiz" method="post">
-      <h2>Quiz — Teste seus conhecimentos sobre IA nos games</h2>
-      <p>Marque a alternativa que você acha correta e clique em "Enviar" para conferir o gabarito.</p>
 
-      <fieldset>
-        <div class="q1">
-        <p><strong>1. Quem cunhou o termo "Inteligência Artificial" em 1956?</strong></p>
-        <input type="radio" id="q1_a1" name="q1" value="a"> Alan Turing<br>
-        <input type="radio" id="q1_a2" name="q1" value="b"> John McCarthy<br>
-        <input type="radio" id="q1_a3" name="q1" value="c"> Claude Shannon<br>
-        <input type="radio" id="q1_a4" name="q1" value="d"> Marvin Minsky<br>
-      </div>
+    <h1>Quiz — Teste seus conhecimentos!</h1>
+    <p>Responda as perguntas abaixo sobre IA nos games e sobre a história dos videogames. Confira o gabarito ao final da página!</p>
 
-      <div class="q2">
-        <p><strong>2. Qual foi o primeiro programa de computador a simular uma conversa humana?</strong></p>
-        <input type="radio" id="q2_a1" name="q2" value="a"> Deep Blue<br>
-        <input type="radio" id="q2_a2" name="q2" value="b"> Watson<br>
-        <input type="radio" id="q2_a3" name="q2" value="c"> ELIZA<br>
-        <input type="radio" id="q2_a4" name="q2" value="d"> GPT-3<br>
-      </div>
+    <!-- PARTE 1: IA nos Games -->
+    <section>
+      <h2>Parte 1 — Inteligência Artificial nos Games</h2>
 
-      <div class="q3">
-        <p><strong>3. Qual supercomputador derrotou o campeão mundial de xadrez Garry Kasparov em 1997?</strong></p>
-        <input type="radio" id="q3_a1" name="q3" value="a"> Deep Blue<br>
-        <input type="radio" id="q3_a2" name="q3" value="b"> Watson<br>
-        <input type="radio" id="q3_a3" name="q3" value="c"> ELIZA<br>
-        <input type="radio" id="q3_a4" name="q3" value="d"> GPT-3<br>
-      </div>
-      </fieldset>
-    </form>
+      <form>
+        <h3>1. Qual jogo é famoso por usar geração procedural para criar mundos infinitos?</h3>
+        <label><input type="radio" name="q1" value="a"> F.E.A.R.</label><br>
+        <label><input type="radio" name="q1" value="b"> Minecraft</label><br>
+        <label><input type="radio" name="q1" value="c"> The Sims</label><br>
+        <label><input type="radio" name="q1" value="d"> Pac-Man</label>
 
-    <details>
-  <summary style="cursor: pointer;"><strong>Clique aqui para ver o Gabarito</strong></summary>
-  <br>
-  <ul>
-    <li><strong>Questão 1:</strong> (b) John McCarthy</li>
-    <li><strong>Questão 2:</strong> (c) ELIZA</li>
-    <li><strong>Questão 3:</strong> (a) Deep Blue</li>
-  </ul>
-</details>
+        <h3>2. O que significa NPC?</h3>
+        <label><input type="radio" name="q2" value="a"> Núcleo de Processamento Central</label><br>
+        <label><input type="radio" name="q2" value="b"> Personagem Não Controlável</label><br>
+        <label><input type="radio" name="q2" value="c"> Personagem Não Jogável</label><br>
+        <label><input type="radio" name="q2" value="d"> Nova Programação de Computador</label>
 
-    <div id="resultado"></div>
-  </main>
-<br><br>  
+        <h3>3. Qual algoritmo é mais usado para pathfinding em games?</h3>
+        <label><input type="radio" name="q3" value="a"> Algoritmo B+</label><br>
+        <label><input type="radio" name="q3" value="b"> Algoritmo A* (A-estrela)</label><br>
+        <label><input type="radio" name="q3" value="c"> Algoritmo Z</label><br>
+        <label><input type="radio" name="q3" value="d"> Algoritmo de Dijkstra</label>
 
+        <h3>4. Qual jogo foi pioneiro em IA tática com inimigos que flanqueavam o jogador?</h3>
+        <label><input type="radio" name="q4" value="a"> Minecraft</label><br>
+        <label><input type="radio" name="q4" value="b"> Gran Turismo</label><br>
+        <label><input type="radio" name="q4" value="c"> F.E.A.R.</label><br>
+        <label><input type="radio" name="q4" value="d"> Pac-Man</label>
+
+        <h3>5. O que é dificuldade adaptativa?</h3>
+        <label><input type="radio" name="q5" value="a"> O jogador escolhe a dificuldade no menu</label><br>
+        <label><input type="radio" name="q5" value="b"> A IA ajusta automaticamente o desafio conforme o desempenho do jogador</label><br>
+        <label><input type="radio" name="q5" value="c"> O jogo fica mais difícil com o tempo</label><br>
+        <label><input type="radio" name="q5" value="d"> Um modo exclusivo para jogadores profissionais</label>
+
+        <!-- PARTE 2: Games em geral -->
+        <h2>Parte 2 — História dos Videogames</h2>
+
+        <h3>6. Qual foi o primeiro console doméstico de grande sucesso?</h3>
+        <label><input type="radio" name="q6" value="a"> Nintendo NES</label><br>
+        <label><input type="radio" name="q6" value="b"> PlayStation 1</label><br>
+        <label><input type="radio" name="q6" value="c"> Atari 2600</label><br>
+        <label><input type="radio" name="q6" value="d"> Sega Genesis</label>
+
+        <h3>7. Qual é o jogo mais vendido da história?</h3>
+        <label><input type="radio" name="q7" value="a"> GTA V</label><br>
+        <label><input type="radio" name="q7" value="b"> Tetris</label><br>
+        <label><input type="radio" name="q7" value="c"> Minecraft</label><br>
+        <label><input type="radio" name="q7" value="d"> Mario Kart 8</label>
+
+        <h3>8. Em que ano o Pokémon GO foi lançado, popularizando a Realidade Aumentada?</h3>
+        <label><input type="radio" name="q8" value="a"> 2014</label><br>
+        <label><input type="radio" name="q8" value="b"> 2016</label><br>
+        <label><input type="radio" name="q8" value="c"> 2018</label><br>
+        <label><input type="radio" name="q8" value="d"> 2020</label>
+
+        <h3>9. Qual IA venceu o campeão mundial do jogo de tabuleiro Go em 2016?</h3>
+        <label><input type="radio" name="q9" value="a"> IBM Deep Blue</label><br>
+        <label><input type="radio" name="q9" value="b"> OpenAI Five</label><br>
+        <label><input type="radio" name="q9" value="c"> AlphaGo (DeepMind)</label><br>
+        <label><input type="radio" name="q9" value="d"> Stockfish</label>
+
+        <h3>10. O que é Cloud Gaming?</h3>
+        <label><input type="radio" name="q10" value="a"> Um jogo que se passa nas nuvens</label><br>
+        <label><input type="radio" name="q10" value="b"> Jogar games pelo navegador sem precisar de console potente</label><br>
+        <label><input type="radio" name="q10" value="c"> Um serviço de download de jogos</label><br>
+        <label><input type="radio" name="q10" value="d"> Um tipo de armazenamento de saves online</label>
+
+        <br>
+        <button type="submit">Enviar respostas</button>
+      </form>
+    </section>
   <footer>
     <p>Enzo William Coelho Fortes- RA: 5165527.<br>
     Aluno do curso de Engenharia de Computação da Uniube.</p>
