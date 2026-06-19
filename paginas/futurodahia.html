@@ -7,167 +7,172 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+<div class="shell">
 
-  <header>
-    <style>
+  <aside class="sidebar" id="sidebar"></aside>
+  <div class="sidebar-overlay" id="overlay"></div>
 
-  nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav a {
-    text-decoration: solid;
-    color: #0b1953;
-    font-weight: bold;
-  }
-</style>
+  <div class="main-content">
+    <div class="topbar">
+      <div class="topbar-logo">IA<span>Games</span></div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+    </div>
 
-    <nav>
-      <ul>
-        <li><a href="oqueehia.html">O que é IA</a></li>
-        <li><a href="tipos.html">Tipos de IA</a></li>
-        <li><a href="timeline.html">Timeline</a></li>
-        <li><a href="exemplos.html">Exemplos</a></li>
-        <li><a href="http://www.uniube.br/" target="_blank"><img src="../images/uniube-logo-png_seeklogo-409307.webp" alt="Logo da Uniube" width="100px"></a></li>
-        <li><a href="futurodahia.html">Futuro da IA</a></li>
-        <li><a href="conclusao.html">Conclusão</a></li>
-        <li><a href="referencias.html">Referências</a></li>
-        
-       
-        <li><a href="../index.html">Início</a></li>
-      </ul>
-    </nav>
-  </header>
+    <main class="page fade-up">
+      <div class="page-eyebrow">Tendências</div>
+      <h1 class="page-title">O <span class="hl">Futuro da IA</span> nos Videogames</h1>
+      <p class="page-lead">
+        A fronteira entre o virtual e o real está desaparecendo. Veja o que já está acontecendo —
+        e o que está a caminho nos próximos anos.
+      </p>
 
-  <main>
+      <div class="section">
+        <div class="section-title">Tendências emergentes</div>
+        <div class="cards-grid">
+          <div class="card">
+            <span class="card-icon">💬</span>
+            <div class="card-title">NPCs com Linguagem Natural</div>
+            <div class="card-body">
+              A Ubisoft testa NPCs que respondem perguntas em linguagem natural via LLMs. Em vez de árvores
+              de diálogo fixas, cada conversa é gerada em tempo real — o NPC pode debater filosofia ou contar uma piada.
+            </div>
+          </div>
+          <div class="card">
+            <span class="card-icon">🌌</span>
+            <div class="card-title">Mundos Gerados Dinamicamente</div>
+            <div class="card-body">
+              Algoritmos generativos criam não apenas mapas, mas histórias completas, missões únicas e
+              culturas inteiras em tempo real — tornando cada sessão uma experiência irrepetível.
+            </div>
+          </div>
+          <div class="card">
+            <span class="card-icon">🎯</span>
+            <div class="card-title">Games que te Conhecem</div>
+            <div class="card-body">
+              IA que analisa seu estilo, sua velocidade de reação, seus pontos fortes e fracos —
+              e ajusta narrativa, personagens e desafios especificamente para você.
+            </div>
+          </div>
+          <div class="card">
+            <span class="card-icon">🛠️</span>
+            <div class="card-title">IA como Parceira de Dev</div>
+            <div class="card-body">
+              Geradores automáticos de texturas, animações de rosto, diálogos e até código. A IA reduz
+              o tempo de produção de grandes jogos e democratiza o desenvolvimento independente.
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <h1>O Futuro da IA nos Videogames</h1>
-    <p>A Inteligência Artificial está evoluindo rapidamente e promete transformar os games de formas que ainda mal conseguimos imaginar.</p>
+      <div class="section">
+        <div class="section-title">VR, AR e Mixed Reality</div>
+        <div class="prose">
+          <p>
+            A Realidade Virtual e Aumentada amplificam o impacto da IA — porque quando o mundo virtual está
+            ao redor de você, a imersão exige que cada personagem e objeto reaja de forma convincente.
+          </p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Tecnologia</th>
+                <th>Como funciona</th>
+                <th>Papel da IA</th>
+                <th>Exemplo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Jogos Tradicionais</strong></td>
+                <td>Tela + controle / teclado</td>
+                <td>NPCs, pathfinding, dificuldade</td>
+                <td>God of War, FIFA</td>
+              </tr>
+              <tr>
+                <td><strong>Realidade Aumentada</strong></td>
+                <td>Câmera + elementos digitais sobrepostos</td>
+                <td>Reconhecimento de ambiente</td>
+                <td>Pokémon GO</td>
+              </tr>
+              <tr>
+                <td><strong>Realidade Virtual</strong></td>
+                <td>Óculos VR + sensores de movimento</td>
+                <td>NPCs hiper-responsivos</td>
+                <td>Beat Saber, Half-Life: Alyx</td>
+              </tr>
+              <tr>
+                <td><strong>Mixed Reality</strong></td>
+                <td>Objetos virtuais interagem com o espaço físico</td>
+                <td>Mapeamento 3D em tempo real</td>
+                <td>Microsoft HoloLens</td>
+              </tr>
+            </tbody>
+            <tfoot><tr><td colspan="4">Fonte: IA Games — Enzo 5165527</td></tr></tfoot>
+          </table>
+        </div>
+      </div>
 
-    <!-- SEÇÃO 1: Tendências de IA -->
-    <section>
-      <h2>Tendências de IA nos games</h2>
+      <div class="section">
+        <div class="section-title">Cloud Gaming</div>
+        <div class="prose">
+          <p>
+            O Cloud Gaming elimina a barreira do hardware: o processamento acontece em servidores remotos
+            e a imagem é transmitida como vídeo comprimido. A IA é fundamental nessa equação —
+            ela comprime o vídeo de forma inteligente, prediz os movimentos do jogador para compensar a latência
+            e otimiza a qualidade de imagem adaptativamente.
+          </p>
+        </div>
+        <div class="cards-grid">
+          <div class="card">
+            <span class="card-icon">🟢</span>
+            <div class="card-title">Xbox Cloud Gaming</div>
+            <div class="card-body">Jogar títulos do Xbox no celular ou PC fraco. Mais de 100 jogos via Game Pass.</div>
+          </div>
+          <div class="card">
+            <span class="card-icon">🟡</span>
+            <div class="card-title">NVIDIA GeForce NOW</div>
+            <div class="card-body">Transforma qualquer computador em uma máquina gamer via streaming com DLSS neural.</div>
+          </div>
+          <div class="card">
+            <span class="card-icon">🔵</span>
+            <div class="card-title">PlayStation Now</div>
+            <div class="card-body">Biblioteca de clássicos do PlayStation acessível pelo streaming da Sony.</div>
+          </div>
+        </div>
+      </div>
 
-      <h3>NPCs com linguagem natural</h3>
-      <p>Empresas como a Ubisoft já testam tecnologias onde NPCs respondem perguntas e interagem com o jogador por meio de linguagem natural, usando modelos de IA generativa.</p>
+      <div class="section">
+        <div class="section-title">Desafios e oportunidades</div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+          <div class="callout warn">
+            <strong>⚠️ Desafios</strong><br><br>
+            • Substituição de empregos de artistas e roteiristas<br>
+            • Direitos autorais sobre conteúdo gerado por IA<br>
+            • NPCs com comportamentos inesperados ou ofensivos<br>
+            • Dependência de infraestrutura de servidores<br>
+            • Possibilidade de uso para desinformação
+          </div>
+          <div class="callout success">
+            <strong>✅ Oportunidades</strong><br><br>
+            • Experiências mais imersivas e personalizadas<br>
+            • Games acessíveis para pessoas com deficiência<br>
+            • Mundos mais ricos com menor custo de produção<br>
+            • Democratização do desenvolvimento independente<br>
+            • Novas formas de narrativa interativa
+          </div>
+        </div>
+      </div>
 
-      <h3>Mundos gerados dinamicamente</h3>
-      <p>Em vez de mapas fixos criados por designers, algoritmos de IA poderão gerar histórias, missões e ambientes completos em tempo real, tornando cada sessão de jogo única.</p>
+    </main>
 
-      <h3>Jogos que se adaptam ao jogador</h3>
-      <p>A IA poderá analisar o estilo de jogo de cada pessoa e ajustar não apenas a dificuldade, mas também a narrativa, os personagens e os desafios apresentados.</p>
+    <footer class="page-footer">
+      <p>Enzo William Coelho Fortes · RA: 5165527 · Engenharia de Computação · Uniube</p>
+    </footer>
+  </div>
+</div>
 
-      <h3>IA como ferramenta de desenvolvimento</h3>
-      <p>Desenvolvedores já usam IA para criar texturas, músicas, diálogos e até código, acelerando a produção de jogos e reduzindo custos.</p>
-    </section>
-
-    <!-- SEÇÃO 2: Realidade Virtual e Aumentada -->
-    <section>
-      <h2>Realidade Virtual e Aumentada nos Games</h2>
-      <p>A Realidade Virtual (VR) e a Realidade Aumentada (AR) são tecnologias que prometem revolucionar ainda mais a forma de jogar:</p>
-
-      <ul>
-        <li><strong>Realidade Virtual (VR):</strong> o jogador entra dentro do jogo usando óculos especiais como o Meta Quest e o PlayStation VR. A IA torna os personagens mais responsivos e o ambiente mais imersivo.</li>
-        <li><strong>Realidade Aumentada (AR):</strong> elementos digitais são sobrepostos ao mundo real. O exemplo mais famoso é o Pokémon GO, que usou AR para criar uma experiência única nas ruas.</li>
-        <li><strong>Mixed Reality:</strong> combinação de VR e AR, onde objetos virtuais interagem com o ambiente físico real em tempo real.</li>
-      </ul>
-
-      <table border="1" width="100%">
-        <thead>
-          <tr>
-            <th colspan="3">Comparativo: VR x AR x Jogos Tradicionais</th>
-          </tr>
-          <tr>
-            <th>Tecnologia</th>
-            <th>Como funciona</th>
-            <th>Exemplo</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Jogos tradicionais</td>
-            <td>Tela + controle ou teclado</td>
-            <td>God of War, FIFA</td>
-          </tr>
-          <tr>
-            <td>Realidade Aumentada</td>
-            <td>Câmera do celular + elementos digitais</td>
-            <td>Pokémon GO</td>
-          </tr>
-          <tr>
-            <td>Realidade Virtual</td>
-            <td>Óculos VR + sensores de movimento</td>
-            <td>Beat Saber, Half-Life: Alyx</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <td colspan="3">Fonte: IA Games — Enzo 5165527</td>
-          </tr>
-        </tfoot>
-      </table>
-    </section>
-
-    <!-- SEÇÃO 3: Cloud Gaming -->
-    <section>
-      <h2>Cloud Gaming — Jogar sem console</h2>
-      <p>O Cloud Gaming (jogo em nuvem) permite jogar games pesados diretamente pelo navegador ou aplicativo, sem precisar de um console caro ou PC potente. O processamento acontece em servidores remotos e a imagem é transmitida em tempo real para o jogador.</p>
-
-      <ul>
-        <li><strong>Xbox Cloud Gaming (Microsoft):</strong> permite jogar jogos do Xbox no celular ou PC fraco</li>
-        <li><strong>NVIDIA GeForce NOW:</strong> transforma qualquer computador em uma máquina gamer</li>
-        <li><strong>PlayStation Now:</strong> biblioteca de jogos de PlayStation acessível pela nuvem</li>
-      </ul>
-
-      <p>A IA é fundamental no cloud gaming para comprimir vídeo, reduzir a latência e prever os movimentos do jogador antes mesmo de chegarem ao servidor.</p>
-    </section>
-
-    <!-- SEÇÃO 4: Games gerados 100% por IA -->
-    <section>
-      <h2>Games gerados 100% por IA</h2>
-      <p>Uma das fronteiras mais fascinantes da tecnologia atual é a criação de jogos inteiros por Inteligência Artificial:</p>
-
-      <ul>
-        <li>Narrativas e diálogos escritos por modelos de linguagem como o GPT</li>
-        <li>Personagens desenhados automaticamente por IA generativa</li>
-        <li>Músicas e efeitos sonoros compostos por algoritmos</li>
-        <li>Código do jogo gerado e testado por IA sem intervenção humana</li>
-      </ul>
-
-      <p>Embora ainda seja experimental, essa tendência pode democratizar a criação de jogos, permitindo que qualquer pessoa crie seu próprio game sem saber programar.</p>
-    </section>
-
-    <!-- SEÇÃO 5: Desafios e benefícios -->
-    <section>
-      <h2>Desafios e preocupações</h2>
-      <ul>
-        <li>Substituição de empregos de artistas e roteiristas</li>
-        <li>Direitos autorais sobre conteúdo gerado por IA</li>
-        <li>Risco de NPCs com comportamentos imprevisíveis</li>
-        <li>Dependência excessiva de servidores e processamento</li>
-      </ul>
-
-      <h2>Benefícios esperados</h2>
-      <ul>
-        <li>Experiências mais imersivas e personalizadas</li>
-        <li>Jogos mais acessíveis para pessoas com deficiência</li>
-        <li>Mundos mais ricos e detalhados</li>
-        <li>Redução do custo de produção de jogos independentes</li>
-      </ul>
-    </section>
-
-  </main>
-
-<footer>
-    <p>Enzo William Coelho Fortes- RA: 5165527.<br>
-    Aluno do curso de Engenharia de Computação da Uniube.</p>
-</footer>
-
-
+<script src="../js/sidebar.js"></script>
+<script>injectSidebar('futurodahia');</script>
 </body>
 </html>

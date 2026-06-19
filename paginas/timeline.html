@@ -7,69 +7,148 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+<div class="shell">
 
-  
-<style>
+  <aside class="sidebar" id="sidebar"></aside>
+  <div class="sidebar-overlay" id="overlay"></div>
 
-  nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav a {
-    text-decoration: solid;
-    color: #0b1953;
-    font-weight: bold;
-  }
-</style>
+  <div class="main-content">
+    <div class="topbar">
+      <div class="topbar-logo">IA<span>Games</span></div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+    </div>
 
-    <nav>
-      <ul>
-        <li><a href="../index.html">Início</a></li>
-        <li><a href="oqueehia.html">O que é IA</a></li>
-        <li><a href="tipos.html">Tipos de IA</a></li>
-        <li><a href="exemplos.html">Exemplos</a></li>
-        <li><a href="futurodahia.html">Futuro da IA</a></li>
-        <li><a href="http://www.uniube.br/" target="_blank"><img src="../images/uniube-logo-png_seeklogo-409307.webp" alt="Logo da Uniube" width="100px"></a></li>
-        <li><a href="conclusao.html">Conclusão</a></li>
-        <li><a href="referencias.html">Referências</a></li>   
-       
-      </ul>
-    </nav>
-  </header>
+    <main class="page fade-up">
+      <div class="page-eyebrow">História</div>
+      <h1 class="page-title">Timeline da <span class="hl">Inteligência Artificial</span></h1>
+      <p class="page-lead">
+        Mais de 70 anos de evolução — dos primeiros experimentos de Turing aos modelos de linguagem que hoje
+        escrevem diálogos de NPCs e geram texturas de jogos em segundos.
+      </p>
 
-  <!-- conteúdo específico de cada página -->
-  <main>
-    <h1>Timeline da IA</h1>
-    <p>A inteligência artificial tem uma história rica e fascinante, marcada por avanços significativos e marcos importantes. Aqui está uma linha do tempo destacando alguns dos eventos mais notáveis na evolução da IA:</p>
+      <div class="timeline">
 
-    <h2>1950 - O Teste de Turing</h2>
-    <p>Alan Turing propôs o Teste de Turing como uma forma de avaliar a inteligência de uma máquina. O teste envolve um interrogador humano que interage com uma máquina e um ser humano, sem saber qual é qual. Se o interrogador não conseguir distinguir entre a máquina e o ser humano, a máquina é considerada inteligente.</p>
+        <div class="timeline-item">
+          <div class="timeline-year">1950</div>
+          <div class="timeline-heading">O Teste de Turing</div>
+          <div class="timeline-body">
+            Alan Turing publica <em>"Computing Machinery and Intelligence"</em> e propõe o Jogo da Imitação:
+            se um interrogador humano não conseguir distinguir respostas de uma máquina das de um humano, a máquina
+            pode ser considerada inteligente. É o documento fundador da IA como campo científico.
+          </div>
+        </div>
 
-    <h2>1956 - Conferência de Dartmouth</h2>
-    <p>A Conferência de Dartmouth é amplamente considerada o nascimento oficial da inteligência artificial como um campo de estudo. Durante esta conferência, os pesquisadores se reuniram para discutir a possibilidade de criar máquinas inteligentes e estabeleceram as bases para a pesquisa em IA.</p>
+        <div class="timeline-item">
+          <div class="timeline-year">1956</div>
+          <div class="timeline-heading">Conferência de Dartmouth — nascimento da IA</div>
+          <div class="timeline-body">
+            John McCarthy, Marvin Minsky e outros pesquisadores se reúnem em Dartmouth e oficializam
+            a Inteligência Artificial como disciplina acadêmica. É aqui que o termo "Artificial Intelligence"
+            é cunhado. O otimismo era enorme — e as limitações da época, invisíveis.
+          </div>
+        </div>
 
-    <h2>1966 - ELIZA</h2>
-    <p>ELIZA foi um programa de computador desenvolvido por Joseph Weizenbaum que simulava uma conversa humana. Ele usava técnicas simples de processamento de linguagem natural para responder às entradas do usuário, criando a ilusão de compreensão. ELIZA é considerado um dos primeiros chatbots e um marco importante na história da IA.</p>
+        <div class="timeline-item">
+          <div class="timeline-year">1966</div>
+          <div class="timeline-heading">ELIZA — o primeiro chatbot</div>
+          <div class="timeline-body">
+            Joseph Weizenbaum cria o ELIZA no MIT: um programa que simulava um psicoterapeuta usando
+            substituição de padrões de texto. Muitos usuários chegavam a acreditar que estavam conversando
+            com uma pessoa real — uma das primeiras demonstrações do poder (e dos limites) da IA de linguagem.
+          </div>
+        </div>
 
-    <h2>1997 - Deep Blue vence Garry Kasparov</h2>
-    <p>O supercomputador Deep Blue, desenvolvido pela IBM, derrotou o campeão mundial de xadrez Garry Kasparov em uma série de partidas. Esta vitória marcou um momento significativo na história da IA, demonstrando que as máquinas podiam superar os humanos em tarefas complexas como o xadrez.</p>
+        <div class="timeline-item">
+          <div class="timeline-year">1980</div>
+          <div class="timeline-heading">Pac-Man — IA nos Arcades</div>
+          <div class="timeline-body">
+            Cada um dos quatro fantasmas do Pac-Man tem um algoritmo de perseguição único.
+            Blinky persegue diretamente; Pinky antecipa a posição futura; Inky usa uma combinação dos dois;
+            Clyde alterna entre perseguição e fuga. É uma das primeiras IAs com <strong>personalidades distintas</strong> em games.
+          </div>
+        </div>
 
-    <h2>2011 - Watson vence Jeopardy!</h2>
-    <p>O sistema de inteligência artificial Watson, também desenvolvido pela IBM, venceu o programa de perguntas e respostas Jeopardy!, competindo contra campeões humanos. Watson usou técnicas avançadas de processamento de linguagem natural e aprendizado de máquina para entender as perguntas e fornecer respostas precisas.</p>
+        <div class="timeline-item">
+          <div class="timeline-year">1997</div>
+          <div class="timeline-heading">Deep Blue vence Kasparov</div>
+          <div class="timeline-body">
+            O supercomputador Deep Blue da IBM derrota o campeão mundial de xadrez Garry Kasparov em uma série
+            de 6 partidas. Foi o momento em que o mundo percebeu que máquinas podiam superar humanos em tarefas
+            cognitivas de alta complexidade — e gerou debates que duram até hoje.
+          </div>
+        </div>
 
-    <h2>2020 - GPT-3 é lançado</h2>
-    <p>O modelo de linguagem GPT-3 (Generative Pre-trained Transformer 3) é um modelo de linguagem de última geração desenvolvido pela OpenAI. Ele é capaz de gerar texto coerente e criativo, além de responder perguntas e realizar tarefas de compreensão de linguagem natural com um nível de desempenho sem precedentes.</p>
-  </main>
+        <div class="timeline-item">
+          <div class="timeline-year">2005</div>
+          <div class="timeline-heading">F.E.A.R. — IA tática revolucionária</div>
+          <div class="timeline-body">
+            O jogo de terror e ação F.E.A.R. lança um sistema de IA que ainda é referência acadêmica:
+            os soldados inimigos usam cobertura dinamicamente, flanqueiam o jogador, comunicam posições entre si
+            e recuam quando em desvantagem. Tudo via <strong>Goal-Oriented Action Planning (GOAP)</strong>.
+          </div>
+        </div>
 
-<footer>
-    <p>Enzo William Coelho Fortes- RA: 5165527.<br>
-    Aluno do curso de Engenharia de Computação da Uniube.</p>
-</footer>
+        <div class="timeline-item">
+          <div class="timeline-year">2011</div>
+          <div class="timeline-heading">Watson vence o Jeopardy!</div>
+          <div class="timeline-body">
+            A IA Watson da IBM vence os maiores campeões do quiz televisivo Jeopardy!,
+            processando linguagem natural, ambiguidades e jogos de palavras em tempo real.
+            Demonstrou que a IA podia lidar com a complexidade e a imprecisão da linguagem humana.
+          </div>
+        </div>
 
+        <div class="timeline-item">
+          <div class="timeline-year">2016</div>
+          <div class="timeline-heading">AlphaGo vence Lee Sedol</div>
+          <div class="timeline-body">
+            A DeepMind (Google) cria o AlphaGo usando aprendizado por reforço e redes neurais profundas.
+            O sistema derrota o campeão mundial de Go — jogo considerado exponencialmente mais complexo que
+            o xadrez — por 4 a 1. O AlphaZero, successor, aprendeu a jogar do zero em apenas 72 horas.
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-year">2020</div>
+          <div class="timeline-heading">GPT-3 e a era da IA Generativa</div>
+          <div class="timeline-body">
+            A OpenAI lança o GPT-3 com 175 bilhões de parâmetros — capaz de escrever código, poesia, diálogos
+            e análises com qualidade próxima à humana. Abre as portas para NPCs com linguagem natural,
+            geração automática de quest e narrativas únicas para cada jogador.
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-year">2023</div>
+          <div class="timeline-heading">GT Sophy e a nova era dos oponentes IA</div>
+          <div class="timeline-body">
+            A Sony lança o GT Sophy em Gran Turismo 7: um agente de corrida treinado por aprendizado por reforço
+            capaz de vencer pilotos profissionais e exibir comportamento de ultrapassagem autêntico e ético.
+            É um marco na IA específica para games competitivos.
+          </div>
+        </div>
+
+        <div class="timeline-item" style="--neon-blue: #00FF88;">
+          <div class="timeline-year" style="color: var(--neon-green);">2024–?</div>
+          <div class="timeline-heading">NPCs com memória e personalidade</div>
+          <div class="timeline-body">
+            A Ubisoft e outras grandes produtoras testam NPCs baseados em LLMs (modelos de linguagem) que
+            lembram de interações anteriores com o jogador, criam opiniões e evoluem suas relações ao longo da
+            narrativa. A fronteira entre personagem programado e personagem "vivo" está desaparecendo.
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+
+    <footer class="page-footer">
+      <p>Enzo William Coelho Fortes · RA: 5165527 · Engenharia de Computação · Uniube</p>
+    </footer>
+  </div>
+</div>
+
+<script src="../js/sidebar.js"></script>
+<script>injectSidebar('timeline');</script>
 </body>
 </html>

@@ -7,150 +7,134 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-<style>
+<div class="shell">
 
-  nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav a {
-    text-decoration: solid;
-    color: #0b1953;
-    font-weight: bold;
-  }
-</style>
+  <aside class="sidebar" id="sidebar"></aside>
+  <div class="sidebar-overlay" id="overlay"></div>
 
-  <header>
-    <nav>
-      <ul>
-        <li><a href="oqueehia.html">O que é IA</a></li>
-        <li><a href="tipos.html">Tipos de IA</a></li>
-        <li><a href="timeline.html">Timeline</a></li>
-        <li><a href="exemplos.html">Exemplos</a></li>
-        <li><a href="http://www.uniube.br/" target="_blank"><img src="../images/uniube-logo-png_seeklogo-409307.webp" alt="Logo da Uniube" width="100px"></a></li>
-        <li><a href="futurodahia.html">Futuro da IA</a></li>
-        <li><a href="conclusao.html">Conclusão</a></li>
-        <li><a href="referencias.html">Referências</a></li>
-        
-       
-        <li><a href="../index.html">Início</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="main-content">
+    <div class="topbar">
+      <div class="topbar-logo">IA<span>Games</span></div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+    </div>
 
-  <main>
+    <main class="page fade-up">
+      <div class="page-eyebrow">Visual</div>
+      <h1 class="page-title">Galeria de <span class="hl">Imagens</span></h1>
+      <p class="page-lead">
+        Explore imagens organizadas por categoria — dos arcades clássicos dos anos 80
+        aos consoles e títulos que definiram a indústria moderna.
+      </p>
 
-    <h1>Galeria de Imagens</h1>
-    <p>Explore imagens organizadas por categoria sobre videogames e Inteligência Artificial.</p>
+      <div class="gallery-section">
+        <div class="section-title">Games Clássicos</div>
+        <p style="font-size:14px; color:var(--text-muted); margin-bottom:16px;">
+          Os jogos que definiram gerações e plantaram a semente do que viria depois.
+        </p>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="../images/pacman.jpg" alt="Pac-Man (1980)">
+            <div class="gallery-caption">Pac-Man (1980) — IA com personalidades distintas</div>
+          </div>
+          <div class="gallery-item">
+            <img src="../images/supermario.jpg" alt="Super Mario Bros. (1985)">
+            <div class="gallery-caption">Super Mario Bros. (1985) — Level design perfeito</div>
+          </div>
+          <div class="gallery-item">
+            <img src="../images/tetris.avif" alt="Tetris (1984)">
+            <div class="gallery-caption">Tetris (1984) — O jogo de puzzle mais icônico</div>
+          </div>
+          <div class="gallery-item">
+            <img src="../images/sonic.webp" alt="Sonic the Hedgehog (1991)">
+            <div class="gallery-caption">Sonic (1991) — Velocidade como mecânica central</div>
+          </div>
+        </div>
+      </div>
 
-    <!-- CATEGORIA 1: Games Clássicos -->
-    <section>
-      <h2>Games Clássicos</h2>
-      <p>Os jogos que definiram gerações e marcaram a história dos videogames:</p>
-      <ul>
-        <li>
-          <img src="../images/pacman.jpg" alt="Pac-Man, clássico dos arcades de 1980" width="250px">
-          <p>Pac-Man (1980)</p>
-        </li>
-        <li>
-          <img src="../images/supermario.jpg" alt="Super Mario Bros. para Nintendo NES" width="250px">
-          <p>Super Mario Bros. (1985)</p>
-        </li>
-        <li>
-          <img src="../images/tetris.avif" alt="Tetris, o jogo de puzzle mais famoso da história" width="250px">
-          <p>Tetris (1984)</p>
-        </li>
-        <li>
-          <img src="../images/sonic.webp" alt="Sonic the Hedgehog para Sega Genesis" width="250px">
-          <p>Sonic the Hedgehog (1991)</p>
-        </li>
-      </ul>
-    </section>
+      <div class="gallery-section">
+        <div class="section-title">Games com IA Avançada</div>
+        <p style="font-size:14px; color:var(--text-muted); margin-bottom:16px;">
+          Títulos que usam tecnologias sofisticadas de IA para criar experiências únicas.
+        </p>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="../images/minecraft.jpg" alt="Minecraft — Geração Procedural">
+            <div class="gallery-caption">Minecraft — Geração Procedural</div>
+          </div>
+          <div class="gallery-item">
+            <img src="../images/fear.webp" alt="F.E.A.R. — IA Tática">
+            <div class="gallery-caption">F.E.A.R. — IA Tática com GOAP</div>
+          </div>
+          <div class="gallery-item">
+            <img src="../images/thesims.png" alt="The Sims — NPCs Autônomos">
+            <div class="gallery-caption">The Sims — NPCs com necessidades próprias</div>
+          </div>
+          <div class="gallery-item">
+            <img src="../images/nomansky.jpg" alt="No Man's Sky — 18 quintilhões de planetas">
+            <div class="gallery-caption">No Man's Sky — Universo procedural infinito</div>
+          </div>
+        </div>
+      </div>
 
-    <!-- CATEGORIA 2: Games Modernos -->
-    <section>
-      <h2>Games Modernos</h2>
-      <p>Títulos recentes que usam tecnologias avançadas de gráficos e IA:</p>
-      <ul>
-        <li>
-          <img src="../images/minecraft.jpg" alt="Mundo gerado proceduralmente no Minecraft" width="250px">
-          <p>Minecraft — Geração Procedural</p>
-        </li>
-        <li>
-          <img src="../images/fear.webp" alt="Cena de combate do F.E.A.R." width="250px">
-          <p>F.E.A.R. — IA Tática</p>
-        </li>
-        <li>
-          <img src="../images/thesims.png" alt="Personagens do The Sims interagindo" width="250px">
-          <p>The Sims — IA Autônoma</p>
-        </li>
-        <li>
-          <img src="../images/nomansky.jpg" alt="Planeta alienígena gerado em No Man's Sky" width="250px">
-          <p>No Man's Sky — Mundo Infinito</p>
-        </li>
-      </ul>
-    </section>
+      <div class="gallery-section">
+        <div class="section-title">Personagens Icônicos</div>
+        <p style="font-size:14px; color:var(--text-muted); margin-bottom:16px;">
+          Personagens que transcenderam os games e viraram ícones culturais.
+        </p>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="../images/mario-personagem.jpg" alt="Mario — Nintendo">
+            <div class="gallery-caption">Mario — Mascote da Nintendo desde 1981</div>
+          </div>
+          <div class="gallery-item">
+            <img src="../images/master-chief.jpg" alt="Master Chief — Halo">
+            <div class="gallery-caption">Master Chief — Halo (2001)</div>
+          </div>
+          <div class="gallery-item">
+            <img src="../images/lara-croft.jpg" alt="Lara Croft — Tomb Raider">
+            <div class="gallery-caption">Lara Croft — Tomb Raider (1996)</div>
+          </div>
+          <div class="gallery-item">
+            <img src="../images/link.jpg" alt="Link — The Legend of Zelda">
+            <div class="gallery-caption">Link — The Legend of Zelda (1986)</div>
+          </div>
+        </div>
+      </div>
 
-    <!-- CATEGORIA 3: Personagens famosos -->
-    <section>
-      <h2>Personagens Famosos dos Games</h2>
-      <p>Personagens icônicos que marcaram gerações de jogadores:</p>
-      <ul>
-        <li>
-          <img src="../images/mario-personagem.jpg" alt="Mario, mascote da Nintendo" width="250px">
-          <p>Mario — Nintendo</p>
-        </li>
-        <li>
-          <img src="../images/master-chief.jpg" alt="Master Chief, protagonista de Halo" width="250px">
-          <p>Master Chief — Halo</p>
-        </li>
-        <li>
-          <img src="../images/lara-croft.jpg" alt="Lara Croft, protagonista de Tomb Raider" width="250px">
-          <p>Lara Croft — Tomb Raider</p>
-        </li>
-        <li>
-          <img src="../images/link.jpg" alt="Link, protagonista de The Legend of Zelda" width="250px">
-          <p>Link — The Legend of Zelda</p>
-        </li>
-      </ul>
-    </section>
+      <div class="gallery-section">
+        <div class="section-title">Evolução dos Consoles</div>
+        <p style="font-size:14px; color:var(--text-muted); margin-bottom:16px;">
+          Do Atari ao PS5 — o hardware que tornou tudo possível.
+        </p>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="../images/atari.jpg" alt="Atari 2600 (1977)">
+            <div class="gallery-caption">Atari 2600 (1977) — Primeiro grande sucesso</div>
+          </div>
+          <div class="gallery-item">
+            <img src="../images/nes.jpg" alt="Nintendo NES (1983)">
+            <div class="gallery-caption">Nintendo NES (1983) — Renascimento dos games</div>
+          </div>
+          <div class="gallery-item">
+            <img src="../images/ps1.jpg" alt="PlayStation 1 (1994)">
+            <div class="gallery-caption">PlayStation 1 (1994) — Era do 3D</div>
+          </div>
+          <div class="gallery-item">
+            <img src="../images/ps5.jpg" alt="PlayStation 5 (2020)">
+            <div class="gallery-caption">PlayStation 5 (2020) — Geração atual</div>
+          </div>
+        </div>
+      </div>
 
-    <!-- CATEGORIA 4: Consoles ao longo do tempo -->
-    <section>
-      <h2>Consoles ao Longo do Tempo</h2>
-      <p>A evolução do hardware que tornou os games possíveis:</p>
-      <ul>
-        <li>
-          <img src="../images/atari.jpg" alt="Console Atari 2600, o primeiro grande sucesso doméstico" width="250px">
-          <p>Atari 2600 (1977)</p>
-        </li>
-        <li>
-          <img src="../images/nes.jpg" alt="Nintendo Entertainment System (NES)" width="250px">
-          <p>Nintendo NES (1983)</p>
-        </li>
-        <li>
-          <img src="../images/ps1.jpg" alt="PlayStation 1, o console que popularizou o 3D" width="250px">
-          <p>PlayStation 1 (1994)</p>
-        </li>
-        <li>
-          <img src="../images/ps5.jpg" alt="PlayStation 5, o console atual da Sony" width="250px">
-          <p>PlayStation 5 (2020)</p>
-        </li>
-      </ul>
-    </section>
+    </main>
 
-  </main>
+    <footer class="page-footer">
+      <p>Enzo William Coelho Fortes · RA: 5165527 · Engenharia de Computação · Uniube</p>
+    </footer>
+  </div>
+</div>
 
-<footer>
-    <p>Enzo William Coelho Fortes- RA: 5165527.<br>
-    Aluno do curso de Engenharia de Computação da Uniube.</p>
-</footer>
-
-
+<script src="../js/sidebar.js"></script>
+<script>injectSidebar('galeria');</script>
 </body>
-</html>s
+</html>

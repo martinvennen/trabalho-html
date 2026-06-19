@@ -7,141 +7,136 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+<div class="shell">
 
-  <!-- cabeçalho -->
-  <header>
-   
-<style>
+  <aside class="sidebar" id="sidebar"></aside>
+  <div class="sidebar-overlay" id="overlay"></div>
 
-  nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav a {
-    text-decoration: solid;
-    color: #0b1953;
-    font-weight: bold;
-  }
-</style>
+  <div class="main-content">
+    <div class="topbar">
+      <div class="topbar-logo">IA<span>Games</span></div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+    </div>
 
-    <nav>
-      <ul>
-        <li><a href="oqueehia.html">O que é IA</a></li>
-        <li><a href="tipos.html">Tipos de IA</a></li>
-        <li><a href="timeline.html">Timeline</a></li>
-        <li><a href="exemplos.html">Exemplos</a></li>
-        <li><a href="http://www.uniube.br/" target="_blank"><img src="../images/uniube-logo-png_seeklogo-409307.webp" alt="Logo da Uniube" width="100px"></a></li>
-        <li><a href="futurodahia.html">Futuro da IA</a></li>
-        <li><a href="conclusao.html">Conclusão</a></li>
-        <li><a href="referencias.html">Referências</a></li>
-        
-       
-        <li><a href="../index.html">Início</a></li>
-      </ul>
-    </nav>
-  </header>
+    <main class="page fade-up">
+      <div class="page-eyebrow">Fechamento</div>
+      <h1 class="page-title"><span class="hl">Conclusão</span></h1>
+      <p class="page-lead">
+        Ao longo deste site, percorremos mais de 70 anos de história — dos primeiros experimentos de Turing
+        aos NPCs que conversam em linguagem natural. Aqui está o que fica.
+      </p>
 
- <main>
+      <div class="section">
+        <div class="section-title">O que aprendemos</div>
+        <div class="cards-grid">
+          <div class="card">
+            <span class="card-icon">🎭</span>
+            <div class="card-title">IA de game ≠ IA real</div>
+            <div class="card-body">A IA nos games é projetada para <em>entreter</em>, não para ser eficiente. Um inimigo perfeito seria frustrante — a IA precisa ser convincente, não invencível.</div>
+          </div>
+          <div class="card">
+            <span class="card-icon">🔧</span>
+            <div class="card-title">Múltiplas técnicas</div>
+            <div class="card-body">Pathfinding, máquinas de estados, geração procedural e aprendizado por reforço resolvem problemas diferentes. Um jogo pode usar várias ao mesmo tempo.</div>
+          </div>
+          <div class="card">
+            <span class="card-icon">📌</span>
+            <div class="card-title">Marcos históricos</div>
+            <div class="card-body">F.E.A.R., Minecraft, The Sims e Alien: Isolation não foram apenas jogos — foram experimentos científicos que avançaram o estado da arte.</div>
+          </div>
+          <div class="card">
+            <span class="card-icon">🔮</span>
+            <div class="card-title">Futuro pessoal</div>
+            <div class="card-body">O próximo salto está nos NPCs com memória persistente e linguagem natural — personagens que lembram, evoluem e criam relações únicas com cada jogador.</div>
+          </div>
+        </div>
+      </div>
 
-    <h1>Conclusão</h1>
-    <p>Ao longo deste site, exploramos como a Inteligência Artificial deixou de ser um conceito futurista para se tornar um elemento central da indústria de videogames.</p>
+      <div class="section">
+        <div class="section-title">Minha perspectiva como estudante</div>
+        <div class="prose">
+          <p>
+            Estudar a relação entre Inteligência Artificial e videogames foi uma das experiências acadêmicas
+            mais ricas deste semestre. Jogos que eu joguei sem pensar — como F.E.A.R. e Minecraft — passaram
+            a ter uma camada completamente nova quando entendi os algoritmos por trás deles.
+          </p>
+          <p>
+            O que mais me impressionou foi perceber que <strong>F.E.A.R. (2005)</strong>, um jogo de quase
+            20 anos, ainda é citado em papers acadêmicos como referência em IA tática. Uma boa implementação
+            de IA tem valor duradouro — independente dos gráficos ou da geração do hardware.
+          </p>
+          <p>
+            Como estudante de Engenharia de Computação, o tema abriu portas para conexões que eu não havia
+            feito antes: os algoritmos de pathfinding que estudamos em disciplinas de estruturas de dados são
+            os mesmos que fazem soldados flanquearem em F.E.A.R. As redes neurais de Deep Learning estão nos
+            jogos que uso para relaxar. A teoria e a prática nunca estiveram tão próximas.
+          </p>
+          <p>
+            O futuro que mais me anima: <strong>RPGs com NPCs generativos</strong> — personagens com história
+            própria, memória de longo prazo e personalidade emergente, onde nenhum diálogo se repete e cada
+            conversa é única. Isso já está começando, e eu quero fazer parte disso.
+          </p>
+        </div>
+      </div>
 
-    <!-- SEÇÃO 1: O que aprendemos -->
-    <section>
-      <h2>O que aprendemos</h2>
-      <ul>
-        <li>A IA nos games não é a mesma IA do mundo real — ela é projetada para entreter</li>
-        <li>Existem vários tipos de IA, cada um com uma função específica</li>
-        <li>Jogos como F.E.A.R., Minecraft e The Sims são marcos históricos no uso de IA</li>
-        <li>O futuro aponta para experiências cada vez mais personalizadas e imersivas</li>
-        <li>A indústria de games cresceu junto com a tecnologia de IA ao longo de décadas</li>
-      </ul>
-    </section>
+      <div class="section">
+        <div class="section-title">O que vem pela frente</div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Tecnologia</th>
+                <th>O que esperar nos próximos anos</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>NPCs Generativos</strong></td>
+                <td>Personagens que conversam de verdade, lembram do jogador e têm opiniões próprias</td>
+              </tr>
+              <tr>
+                <td><strong>Mundos Procedurais Avançados</strong></td>
+                <td>Universos com história, civilizações e clima gerados por IA, sem mapa repetido</td>
+              </tr>
+              <tr>
+                <td><strong>Cloud Gaming + IA</strong></td>
+                <td>Jogos de altíssima fidelidade rodando em qualquer dispositivo via streaming neural</td>
+              </tr>
+              <tr>
+                <td><strong>VR + IA</strong></td>
+                <td>Imersão total com personagens que reagem naturalmente a gestos e voz</td>
+              </tr>
+              <tr>
+                <td><strong>Games criados por IA</strong></td>
+                <td>Qualquer pessoa poderá criar seu próprio jogo descrevendo o que quer — sem programar</td>
+              </tr>
+            </tbody>
+            <tfoot><tr><td colspan="2">Fonte: IA Games — Enzo 5165527</td></tr></tfoot>
+          </table>
+        </div>
+      </div>
 
-    <!-- SEÇÃO 2: Opinião pessoal -->
-    <section>
-      <h2>Minha opinião sobre o tema</h2>
-      <p>Estudar a relação entre Inteligência Artificial e videogames foi uma experiência enriquecedora. Sempre joguei games sem pensar na tecnologia por trás deles — e descobrir que existe toda uma ciência para fazer um inimigo agir de forma inteligente ou para gerar um mundo infinito mudou completamente minha perspectiva.</p>
+      <div class="callout">
+        <strong>Reflexão final:</strong> A combinação entre IA e videogames é um dos campos mais fascinantes
+        da tecnologia. Ela não apenas melhora a experiência do jogador — impulsiona pesquisas que moldam
+        robótica, medicina e educação. Os games sempre foram um laboratório de inovação.
+        A IA é, hoje, o seu principal combustível.
+      </div>
 
-      <p>O que mais me impressionou foi o caso do F.E.A.R. (2005): um jogo de quase 20 anos que ainda hoje é citado como referência em IA tática. Isso mostra que uma boa implementação de IA tem valor duradouro, independente dos gráficos ou da geração do console.</p>
+      <div style="display:flex; gap:14px; flex-wrap:wrap; margin-top:32px;">
+        <a href="referencias.html" class="btn btn-outline">📚 Ver referências</a>
+        <a href="quiz.html" class="btn btn-primary">🧠 Fazer o Quiz</a>
+      </div>
 
-      <p>Acredito que o futuro mais interessante está na combinação de IA generativa com jogos narrativos — imaginar um RPG onde cada NPC tem sua própria história, memória e personalidade, e onde nenhum diálogo se repete, é algo que me anima muito como jogador.</p>
-    </section>
+    </main>
 
-    <!-- SEÇÃO 3: Como esse estudo impactou minha visão -->
-    <section>
-      <h2>Como esse estudo impactou minha visão sobre games</h2>
-      <p>Antes deste projeto, via os videogames apenas como entretenimento. Após pesquisar sobre IA nos games, passei a enxergar cada jogo como um sistema complexo de algoritmos, decisões e lógica computacional trabalhando em segundo plano para criar a ilusão de vida.</p>
+    <footer class="page-footer">
+      <p>Enzo William Coelho Fortes · RA: 5165527 · Engenharia de Computação · Uniube</p>
+    </footer>
+  </div>
+</div>
 
-      <p>Isso também despertou interesse em outras áreas da tecnologia, como ciência da computação, robótica e aprendizado de máquina — áreas que antes pareciam distantes, mas que agora percebo estarem presentes até nos momentos de lazer.</p>
-    </section>
-
-    <!-- SEÇÃO 4: O que vem pela frente -->
-    <section>
-      <h2>O que vem pela frente</h2>
-      <p>O futuro dos games com IA é promissor e cheio de possibilidades:</p>
-
-      <table border="1" width="100%">
-        <thead>
-          <tr>
-            <th colspan="2">Tendências para os próximos anos</th>
-          </tr>
-          <tr>
-            <th>Tecnologia</th>
-            <th>O que esperar</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>NPCs com IA generativa</td>
-            <td>Personagens que conversam de verdade e lembram do jogador</td>
-          </tr>
-          <tr>
-            <td>Mundos procedurais avançados</td>
-            <td>Universos infinitos com história, clima e civilizações geradas por IA</td>
-          </tr>
-          <tr>
-            <td>Cloud Gaming + IA</td>
-            <td>Jogos pesadíssimos acessíveis em qualquer dispositivo</td>
-          </tr>
-          <tr>
-            <td>VR + IA</td>
-            <td>Imersão total com personagens que reagem naturalmente ao jogador</td>
-          </tr>
-          <tr>
-            <td>Games criados por IA</td>
-            <td>Qualquer pessoa poderá criar seu próprio jogo sem saber programar</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <td colspan="2">Fonte: IA Games — Enzo 5165527</td>
-          </tr>
-        </tfoot>
-      </table>
-
-      <p>Uma coisa é certa: a fronteira entre o virtual e o real está cada vez mais tênue — e os videogames serão um dos principais responsáveis por isso.</p>
-    </section>
-
-    <!-- SEÇÃO 5: Reflexão final -->
-    <section>
-      <h2>Reflexão final</h2>
-      <p>A combinação entre IA e videogames é um dos campos mais fascinantes da tecnologia moderna. Ela não apenas melhora a experiência do jogador, mas também impulsiona pesquisas que impactam outras áreas, como robótica, medicina e educação.</p>
-      <p>Os games sempre foram um laboratório de inovação — e a Inteligência Artificial é, hoje, o seu principal combustível.</p>
-    </section>
-
-  </main>
-
-    
-<footer>
-    <p>Enzo William Coelho Fortes- RA: 5165527.<br>
-    Aluno do curso de Engenharia de Computação da Uniube.</p>
-</footer>
-
+<script src="../js/sidebar.js"></script>
+<script>injectSidebar('conclusao');</script>
 </body>
 </html>

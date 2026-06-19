@@ -7,126 +7,234 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+<div class="shell">
 
-<style>
+  <aside class="sidebar" id="sidebar"></aside>
+  <div class="sidebar-overlay" id="overlay"></div>
 
-  nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  <div class="main-content">
+    <div class="topbar">
+      <div class="topbar-logo">IA<span>Games</span></div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+    </div>
+
+    <main class="page fade-up">
+      <div class="page-eyebrow">Teste seus conhecimentos</div>
+      <h1 class="page-title">Quiz — <span class="hl">IA nos Games</span></h1>
+      <p class="page-lead">
+        10 perguntas sobre Inteligência Artificial, história dos videogames e tecnologia.
+        Selecione suas respostas e clique em "Ver resultado" ao final.
+      </p>
+
+      <div id="quiz-container">
+
+        <div class="section-title">Parte 1 — Inteligência Artificial</div>
+
+        <div class="quiz-question">
+          <div class="quiz-q-num">Pergunta 01 / 10</div>
+          <div class="quiz-q-text">Qual jogo é mais conhecido por usar geração procedural para criar mundos infinitos?</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q1" value="a"> F.E.A.R.</label>
+            <label class="quiz-option"><input type="radio" name="q1" value="b"> Minecraft</label>
+            <label class="quiz-option"><input type="radio" name="q1" value="c"> The Sims</label>
+            <label class="quiz-option"><input type="radio" name="q1" value="d"> Pac-Man</label>
+          </div>
+        </div>
+
+        <div class="quiz-question">
+          <div class="quiz-q-num">Pergunta 02 / 10</div>
+          <div class="quiz-q-text">O que significa a sigla NPC nos videogames?</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q2" value="a"> Núcleo de Processamento Central</label>
+            <label class="quiz-option"><input type="radio" name="q2" value="b"> Personagem Não Controlável</label>
+            <label class="quiz-option"><input type="radio" name="q2" value="c"> Non-Player Character (Personagem Não Jogável)</label>
+            <label class="quiz-option"><input type="radio" name="q2" value="d"> Nova Programação de Computador</label>
+          </div>
+        </div>
+
+        <div class="quiz-question">
+          <div class="quiz-q-num">Pergunta 03 / 10</div>
+          <div class="quiz-q-text">Qual algoritmo de pathfinding é mais utilizado em games para encontrar o caminho ótimo?</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q3" value="a"> Algoritmo B+</label>
+            <label class="quiz-option"><input type="radio" name="q3" value="b"> Algoritmo A* (A-estrela)</label>
+            <label class="quiz-option"><input type="radio" name="q3" value="c"> Algoritmo Z</label>
+            <label class="quiz-option"><input type="radio" name="q3" value="d"> Algoritmo de Dijkstra Simples</label>
+          </div>
+        </div>
+
+        <div class="quiz-question">
+          <div class="quiz-q-num">Pergunta 04 / 10</div>
+          <div class="quiz-q-text">Qual jogo ficou famoso por ter inimigos que flanqueavam o jogador usando GOAP?</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q4" value="a"> Minecraft</label>
+            <label class="quiz-option"><input type="radio" name="q4" value="b"> Gran Turismo</label>
+            <label class="quiz-option"><input type="radio" name="q4" value="c"> F.E.A.R.</label>
+            <label class="quiz-option"><input type="radio" name="q4" value="d"> Pac-Man</label>
+          </div>
+        </div>
+
+        <div class="quiz-question">
+          <div class="quiz-q-num">Pergunta 05 / 10</div>
+          <div class="quiz-q-text">O que é "dificuldade adaptativa" em videogames?</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q5" value="a"> O jogador escolhe a dificuldade no menu inicial</label>
+            <label class="quiz-option"><input type="radio" name="q5" value="b"> A IA ajusta automaticamente o desafio conforme o desempenho do jogador</label>
+            <label class="quiz-option"><input type="radio" name="q5" value="c"> O jogo fica mais difícil somente com o passar do tempo</label>
+            <label class="quiz-option"><input type="radio" name="q5" value="d"> Um modo exclusivo para jogadores profissionais</label>
+          </div>
+        </div>
+
+        <div class="section-title" style="margin-top:32px;">Parte 2 — História dos Games</div>
+
+        <div class="quiz-question">
+          <div class="quiz-q-num">Pergunta 06 / 10</div>
+          <div class="quiz-q-text">Qual foi o primeiro console doméstico de grande sucesso comercial?</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q6" value="a"> Nintendo NES</label>
+            <label class="quiz-option"><input type="radio" name="q6" value="b"> PlayStation 1</label>
+            <label class="quiz-option"><input type="radio" name="q6" value="c"> Atari 2600</label>
+            <label class="quiz-option"><input type="radio" name="q6" value="d"> Sega Genesis</label>
+          </div>
+        </div>
+
+        <div class="quiz-question">
+          <div class="quiz-q-num">Pergunta 07 / 10</div>
+          <div class="quiz-q-text">Qual é o jogo mais vendido da história (incluindo todas as plataformas)?</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q7" value="a"> GTA V</label>
+            <label class="quiz-option"><input type="radio" name="q7" value="b"> Tetris</label>
+            <label class="quiz-option"><input type="radio" name="q7" value="c"> Minecraft</label>
+            <label class="quiz-option"><input type="radio" name="q7" value="d"> Mario Kart 8 Deluxe</label>
+          </div>
+        </div>
+
+        <div class="quiz-question">
+          <div class="quiz-q-num">Pergunta 08 / 10</div>
+          <div class="quiz-q-text">Em que ano o Pokémon GO foi lançado, popularizando a Realidade Aumentada?</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q8" value="a"> 2014</label>
+            <label class="quiz-option"><input type="radio" name="q8" value="b"> 2016</label>
+            <label class="quiz-option"><input type="radio" name="q8" value="c"> 2018</label>
+            <label class="quiz-option"><input type="radio" name="q8" value="d"> 2020</label>
+          </div>
+        </div>
+
+        <div class="quiz-question">
+          <div class="quiz-q-num">Pergunta 09 / 10</div>
+          <div class="quiz-q-text">Qual IA da DeepMind venceu o campeão mundial de Go em 2016?</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q9" value="a"> IBM Deep Blue</label>
+            <label class="quiz-option"><input type="radio" name="q9" value="b"> OpenAI Five</label>
+            <label class="quiz-option"><input type="radio" name="q9" value="c"> AlphaGo</label>
+            <label class="quiz-option"><input type="radio" name="q9" value="d"> Stockfish</label>
+          </div>
+        </div>
+
+        <div class="quiz-question">
+          <div class="quiz-q-num">Pergunta 10 / 10</div>
+          <div class="quiz-q-text">O que é Cloud Gaming?</div>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q10" value="a"> Um jogo cujo enredo se passa nas nuvens</label>
+            <label class="quiz-option"><input type="radio" name="q10" value="b"> Jogar games pelo navegador sem precisar de console potente</label>
+            <label class="quiz-option"><input type="radio" name="q10" value="c"> Um serviço de download de jogos na internet</label>
+            <label class="quiz-option"><input type="radio" name="q10" value="d"> Um tipo de armazenamento de saves online</label>
+          </div>
+        </div>
+
+        <div class="quiz-footer">
+          <button class="btn btn-primary" id="btn-submit" onclick="checkQuiz()">
+            ▶ Ver resultado
+          </button>
+          <button class="btn btn-outline" id="btn-reset" onclick="resetQuiz()" style="display:none;">
+            ↺ Tentar novamente
+          </button>
+        </div>
+
+        <div id="quiz-result">
+          <h3>Resultado</h3>
+          <div class="score" id="score-display">—</div>
+          <p id="score-msg"></p>
+        </div>
+
+      </div>
+
+      <div class="callout" style="margin-top:32px;">
+        <strong>Gabarito:</strong>
+        Q1-b · Q2-c · Q3-b · Q4-c · Q5-b · Q6-c · Q7-c · Q8-b · Q9-c · Q10-b
+      </div>
+
+    </main>
+
+    <footer class="page-footer">
+      <p>Enzo William Coelho Fortes · RA: 5165527 · Engenharia de Computação · Uniube</p>
+    </footer>
+  </div>
+</div>
+
+<script src="../js/sidebar.js"></script>
+<script>injectSidebar('quiz');</script>
+
+<script>
+  const correct = { q1:'b', q2:'c', q3:'b', q4:'c', q5:'b', q6:'c', q7:'c', q8:'b', q9:'c', q10:'b' };
+
+  function checkQuiz() {
+    let score = 0;
+    const questions = document.querySelectorAll('.quiz-question');
+
+    questions.forEach((qEl, i) => {
+      const name = 'q' + (i + 1);
+      const chosen = document.querySelector(`input[name="${name}"]:checked`);
+      const options = qEl.querySelectorAll('.quiz-option');
+
+      options.forEach(opt => {
+        const val = opt.querySelector('input').value;
+        if (val === correct[name]) opt.classList.add('correct');
+        if (chosen && chosen.value === val && val !== correct[name]) opt.classList.add('wrong');
+        opt.querySelector('input').disabled = true;
+      });
+
+      if (chosen && chosen.value === correct[name]) score++;
+    });
+
+    const result = document.getElementById('quiz-result');
+    const scoreDisplay = document.getElementById('score-display');
+    const scoreMsg = document.getElementById('score-msg');
+
+    scoreDisplay.textContent = score + '/10';
+
+    const msgs = [
+      [0,3,  '😬 Continue estudando! Revise as páginas anteriores e tente de novo.'],
+      [4,5,  '👍 Bom começo! Você tem uma base, mas ainda há espaço para crescer.'],
+      [6,7,  '🎮 Muito bem! Você conhece bastante sobre IA nos games.'],
+      [8,9,  '🚀 Excelente! Você domina o assunto com distinção.'],
+      [10,10,'🏆 Perfeito! Pontuação máxima — você é um especialista em IA nos games!']
+    ];
+
+    for (const [min, max, msg] of msgs) {
+      if (score >= min && score <= max) { scoreMsg.textContent = msg; break; }
+    }
+
+    result.style.display = 'block';
+    result.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+    document.getElementById('btn-submit').style.display = 'none';
+    document.getElementById('btn-reset').style.display = 'inline-flex';
   }
-  
-  nav a {
-    text-decoration: solid;
-    color: #0b1953;
-    font-weight: bold;
+
+  function resetQuiz() {
+    document.querySelectorAll('input[type=radio]').forEach(r => {
+      r.checked = false;
+      r.disabled = false;
+    });
+    document.querySelectorAll('.quiz-option').forEach(o => {
+      o.classList.remove('correct', 'wrong');
+    });
+    document.getElementById('quiz-result').style.display = 'none';
+    document.getElementById('btn-submit').style.display = 'inline-flex';
+    document.getElementById('btn-reset').style.display = 'none';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
-</style>
-
-  <header>
-    <nav>
-      <ul>
-        <li><a href="oqueehia.html">O que é IA</a></li>
-        <li><a href="tipos.html">Tipos de IA</a></li>
-        <li><a href="timeline.html">Timeline</a></li>
-        <li><a href="faleconosco.html">Fale Conosco</a></li>
-        <li><a href="exemplos.html">Exemplos</a></li>
-        <li><a href="http://www.uniube.br/" target="_blank"><img src="../images/uniube-logo-png_seeklogo-409307.webp" alt="Logo da Uniube" width="100px"></a></li>
-        <li><a href="futurodahia.html">Futuro da IA</a></li>
-        <li><a href="conclusao.html">Conclusão</a></li>
-        <li><a href="galeria.html">Galeria</a></li>
-        <li><a href="referencias.html">Referências</a></li>
-        
-       
-        <li><a href="../index.html">Início</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-
-    <h1>Quiz — Teste seus conhecimentos!</h1>
-    <p>Responda as perguntas abaixo sobre IA nos games e sobre a história dos videogames. Confira o gabarito ao final da página!</p>
-
-    <!-- PARTE 1: IA nos Games -->
-    <section>
-      <h2>Parte 1 — Inteligência Artificial nos Games</h2>
-
-      <form>
-        <h3>1. Qual jogo é famoso por usar geração procedural para criar mundos infinitos?</h3>
-        <label><input type="radio" name="q1" value="a"> F.E.A.R.</label><br>
-        <label><input type="radio" name="q1" value="b"> Minecraft</label><br>
-        <label><input type="radio" name="q1" value="c"> The Sims</label><br>
-        <label><input type="radio" name="q1" value="d"> Pac-Man</label>
-
-        <h3>2. O que significa NPC?</h3>
-        <label><input type="radio" name="q2" value="a"> Núcleo de Processamento Central</label><br>
-        <label><input type="radio" name="q2" value="b"> Personagem Não Controlável</label><br>
-        <label><input type="radio" name="q2" value="c"> Personagem Não Jogável</label><br>
-        <label><input type="radio" name="q2" value="d"> Nova Programação de Computador</label>
-
-        <h3>3. Qual algoritmo é mais usado para pathfinding em games?</h3>
-        <label><input type="radio" name="q3" value="a"> Algoritmo B+</label><br>
-        <label><input type="radio" name="q3" value="b"> Algoritmo A* (A-estrela)</label><br>
-        <label><input type="radio" name="q3" value="c"> Algoritmo Z</label><br>
-        <label><input type="radio" name="q3" value="d"> Algoritmo de Dijkstra</label>
-
-        <h3>4. Qual jogo foi pioneiro em IA tática com inimigos que flanqueavam o jogador?</h3>
-        <label><input type="radio" name="q4" value="a"> Minecraft</label><br>
-        <label><input type="radio" name="q4" value="b"> Gran Turismo</label><br>
-        <label><input type="radio" name="q4" value="c"> F.E.A.R.</label><br>
-        <label><input type="radio" name="q4" value="d"> Pac-Man</label>
-
-        <h3>5. O que é dificuldade adaptativa?</h3>
-        <label><input type="radio" name="q5" value="a"> O jogador escolhe a dificuldade no menu</label><br>
-        <label><input type="radio" name="q5" value="b"> A IA ajusta automaticamente o desafio conforme o desempenho do jogador</label><br>
-        <label><input type="radio" name="q5" value="c"> O jogo fica mais difícil com o tempo</label><br>
-        <label><input type="radio" name="q5" value="d"> Um modo exclusivo para jogadores profissionais</label>
-
-        <!-- PARTE 2: Games em geral -->
-        <h2>Parte 2 — História dos Videogames</h2>
-
-        <h3>6. Qual foi o primeiro console doméstico de grande sucesso?</h3>
-        <label><input type="radio" name="q6" value="a"> Nintendo NES</label><br>
-        <label><input type="radio" name="q6" value="b"> PlayStation 1</label><br>
-        <label><input type="radio" name="q6" value="c"> Atari 2600</label><br>
-        <label><input type="radio" name="q6" value="d"> Sega Genesis</label>
-
-        <h3>7. Qual é o jogo mais vendido da história?</h3>
-        <label><input type="radio" name="q7" value="a"> GTA V</label><br>
-        <label><input type="radio" name="q7" value="b"> Tetris</label><br>
-        <label><input type="radio" name="q7" value="c"> Minecraft</label><br>
-        <label><input type="radio" name="q7" value="d"> Mario Kart 8</label>
-
-        <h3>8. Em que ano o Pokémon GO foi lançado, popularizando a Realidade Aumentada?</h3>
-        <label><input type="radio" name="q8" value="a"> 2014</label><br>
-        <label><input type="radio" name="q8" value="b"> 2016</label><br>
-        <label><input type="radio" name="q8" value="c"> 2018</label><br>
-        <label><input type="radio" name="q8" value="d"> 2020</label>
-
-        <h3>9. Qual IA venceu o campeão mundial do jogo de tabuleiro Go em 2016?</h3>
-        <label><input type="radio" name="q9" value="a"> IBM Deep Blue</label><br>
-        <label><input type="radio" name="q9" value="b"> OpenAI Five</label><br>
-        <label><input type="radio" name="q9" value="c"> AlphaGo (DeepMind)</label><br>
-        <label><input type="radio" name="q9" value="d"> Stockfish</label>
-
-        <h3>10. O que é Cloud Gaming?</h3>
-        <label><input type="radio" name="q10" value="a"> Um jogo que se passa nas nuvens</label><br>
-        <label><input type="radio" name="q10" value="b"> Jogar games pelo navegador sem precisar de console potente</label><br>
-        <label><input type="radio" name="q10" value="c"> Um serviço de download de jogos</label><br>
-        <label><input type="radio" name="q10" value="d"> Um tipo de armazenamento de saves online</label>
-
-        <br>
-        <button type="submit">Enviar respostas</button>
-      </form>
-    </section>
-  <footer>
-    <p>Enzo William Coelho Fortes- RA: 5165527.<br>
-    Aluno do curso de Engenharia de Computação da Uniube.</p>
-</footer>
-
+</script>
 </body>
 </html>

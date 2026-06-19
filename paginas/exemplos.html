@@ -7,184 +7,219 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+<div class="shell">
 
+  <aside class="sidebar" id="sidebar"></aside>
+  <div class="sidebar-overlay" id="overlay"></div>
 
-  <header>
-    <style>
+  <div class="main-content">
+    <div class="topbar">
+      <div class="topbar-logo">IA<span>Games</span></div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+    </div>
 
-  nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav a {
-    text-decoration: solid;
-    color: #0b1953;
-    font-weight: bold;
-  }
-</style>
+    <main class="page fade-up">
+      <div class="page-eyebrow">Cases reais</div>
+      <h1 class="page-title">Games que <span class="hl">definiram a IA</span></h1>
+      <p class="page-lead">
+        Alguns jogos não foram apenas divertidos — foram experimentos científicos que avançaram o estado
+        da arte em Inteligência Artificial. Aqui estão os mais importantes.
+      </p>
 
-    <nav>
-      <ul>
-        <li><a href="oqueehia.html">O que é IA</a></li>
-        <li><a href="tipos.html">Tipos de IA</a></li>
-        <li><a href="timeline.html">Timeline</a></li>
-        <li><a href="exemplos.html">Exemplos</a></li>
-        <li><a href="http://www.uniube.br/" target="_blank"><img src="../images/uniube-logo-png_seeklogo-409307.webp" alt="Logo da Uniube" width="100px"></a></li>
-        <li><a href="futurodahia.html">Futuro da IA</a></li>
-        <li><a href="conclusao.html">Conclusão</a></li>
-        <li><a href="referencias.html">Referências</a></li>
-        
-       
-        <li><a href="../index.html">Início</a></li>
-      </ul>
-    </nav>
-  </header>
+      <div class="section">
+        <div class="section-title">Games com IA avançada</div>
+        <div class="games-grid">
 
+          <div class="game-card">
+            <img class="game-card-img" src="../images/minecraft.jpg" alt="Minecraft">
+            <div class="game-card-body">
+              <span class="game-card-tag">Geração Procedural</span>
+              <div class="game-card-title">Minecraft (2011)</div>
+              <div class="game-card-desc">
+                Usa o algoritmo <strong>Perlin Noise</strong> para gerar terrenos infinitos e únicos a cada partida.
+                Mobs como os Creepers têm comportamento baseado em máquinas de estados e pathfinding inteligente.
+                Nenhum mundo gerado é igual ao outro — matematicamente impossível.
+              </div>
+            </div>
+          </div>
 
-   <main>
+          <div class="game-card">
+            <img class="game-card-img" src="../images/thesims.png" alt="The Sims">
+            <div class="game-card-body">
+              <span class="game-card-tag">NPCs Autônomos</span>
+              <div class="game-card-title">The Sims (2000)</div>
+              <div class="game-card-desc">
+                Cada Sim possui um sistema de <strong>necessidades e humores</strong> que a IA monitora continuamente.
+                Decisões são tomadas com base em "motivos" internos (fome, diversão, higiene).
+                Criado por Will Wright com inspiração em autômatos celulares.
+              </div>
+            </div>
+          </div>
 
-    <h1>Exemplos de Jogos que usam IA</h1>
-    <p>Vários games ao longo da história se destacaram pelo uso inovador de Inteligência Artificial. Confira os exemplos mais marcantes:</p>
+          <div class="game-card">
+            <img class="game-card-img" src="../images/fear.webp" alt="F.E.A.R.">
+            <div class="game-card-body">
+              <span class="game-card-tag">IA Tática · GOAP</span>
+              <div class="game-card-title">F.E.A.R. (2005)</div>
+              <div class="game-card-desc">
+                Referência acadêmica em IA de combate. Usa <strong>Goal-Oriented Action Planning (GOAP)</strong>:
+                os soldados definem objetivos (eliminar jogador) e planejam ações autonomamente.
+                Eles se comunicam, flanqueiam, usam cobertura e recuam coordenados.
+              </div>
+            </div>
+          </div>
 
-    <!-- SEÇÃO 1: Jogos com IA avançada -->
-    <section>
-      <h2>Games com IA avançada</h2>
+          <div class="game-card">
+            <div class="game-card-body" style="padding-top: 24px;">
+              <span class="game-card-tag">IA Adaptativa</span>
+              <div class="game-card-title">Alien: Isolation (2014)</div>
+              <div class="game-card-desc">
+                O Xenomorfo é controlado por <strong>duas IAs simultaneamente</strong>: uma "diretora" que sabe
+                a posição do jogador e comanda a IA do alien a buscar determinadas áreas, sem revelar
+                a localização exata. O alien aprende com cada esconderijo e hábito do jogador.
+              </div>
+            </div>
+          </div>
 
-      <h3>Minecraft</h3>
-      <img src="../images/minecraft.jpg" alt="Mundo gerado proceduralmente no Minecraft" width="300px">
-      <p>Usa geração procedural para criar mundos infinitos e únicos a cada partida. Nenhum mapa é igual ao outro.</p>
+          <div class="game-card">
+            <div class="game-card-body" style="padding-top: 24px;">
+              <span class="game-card-tag">Sistema Nemesis</span>
+              <div class="game-card-title">Shadow of Mordor (2014)</div>
+              <div class="game-card-desc">
+                O <strong>Sistema Nemesis</strong> cria inimigos com memória persistente: eles lembram de cada
+                confronto, evoluem em poder depois de derrota, e voltam para se vingar. Patenteado pela
+                Warner Bros., foi premiado como uma das maiores inovações em IA de games.
+              </div>
+            </div>
+          </div>
 
-      <h3>The Sims</h3>
-      <img src="../images/thesims.png" alt="Personagens do The Sims" width="300px">
-      <p>Cada personagem possui necessidades, humor e desejos simulados por IA. Eles tomam decisões autônomas baseadas em seu estado interno.</p>
+          <div class="game-card">
+            <img class="game-card-img" src="../images/nomansky.jpg" alt="No Man's Sky">
+            <div class="game-card-body">
+              <span class="game-card-tag">Universo Procedural</span>
+              <div class="game-card-title">No Man's Sky (2016)</div>
+              <div class="game-card-desc">
+                Gera <strong>18,4 quintilhões de planetas</strong> usando funções matemáticas determinísticas.
+                Cada planeta tem biomas, fauna e flora únicos criados por algoritmos de IA. Toda a diversidade
+                cabe em poucos MB de código — não em terabytes de assets.
+              </div>
+            </div>
+          </div>
 
-      <h3>F.E.A.R.</h3>
-      <img src="../images/fear.webp" alt="Inimigos táticos do F.E.A.R." width="300px">
-      <p>Considerado um dos jogos com a IA de inimigos mais avançada da história. Os soldados usavam cobertura, flanqueavam e coordenavam ataques.</p>
+        </div>
+      </div>
 
-      <h3>Alien: Isolation</h3>
-      <p>O xenomorfo é controlado por uma IA que aprende os padrões do jogador e adapta seu comportamento para ser cada vez mais ameaçador.</p>
+      <div class="section">
+        <div class="section-title">Games famosos com IA simples</div>
+        <p class="prose" style="margin-bottom:16px; font-size:14px; color:var(--text-muted);">
+          Nem todo clássico precisa de IA complexa. Muitos ícones se tornaram imortais com mecânicas elementares
+          e design genial — provando que a IA é uma ferramenta, não uma garantia de qualidade.
+        </p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Jogo</th>
+                <th>Como a "IA" funciona</th>
+                <th>Por que é lendário</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Tetris</strong> (1984)</td>
+                <td>Peças em ordem aleatória — sem IA real</td>
+                <td>Design puro e loop de gameplay viciante</td>
+              </tr>
+              <tr>
+                <td><strong>Super Mario Bros.</strong> (1985)</td>
+                <td>Inimigos em padrões fixos e previsíveis</td>
+                <td>Level design que ensina as regras sem texto</td>
+              </tr>
+              <tr>
+                <td><strong>Doom</strong> (1993)</td>
+                <td>Inimigos perseguem por ângulo de visão</td>
+                <td>Pioneiro do FPS moderno e do 3D nos games</td>
+              </tr>
+              <tr>
+                <td><strong>Pokémon</strong> (1996)</td>
+                <td>Oponentes seguem tabela de tipos e dano</td>
+                <td>Sistema de batalha estratégico e coleção</td>
+              </tr>
+              <tr>
+                <td><strong>Pong</strong> (1972)</td>
+                <td>Raquete da CPU segue a posição da bola</td>
+                <td>O jogo que iniciou a indústria dos games</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr><td colspan="3">Fonte: IA Games — Enzo 5165527</td></tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
 
-      <h3>Middle-Earth: Shadow of Mordor</h3>
-      <p>O sistema Nemesis cria inimigos com memória — eles lembram de confrontos anteriores com o jogador e evoluem com base nessas interações.</p>
+      <div class="section">
+        <div class="section-title">Games brasileiros em destaque</div>
+        <div class="callout success">
+          <strong>Brasil no mapa dos games:</strong> A indústria nacional cresce, com estúdios premiados internacionalmente.
+          Confira títulos que representam o talento brasileiro.
+        </div>
+        <div class="cards-grid">
+          <div class="card">
+            <span class="card-icon">🏎️</span>
+            <div class="card-title">Horizon Chase Turbo</div>
+            <div class="card-body">Aquiris (Porto Alegre) — corrida inspirada nos clássicos dos anos 90. Sucesso no Steam e consoles.</div>
+          </div>
+          <div class="card">
+            <span class="card-icon">⚔️</span>
+            <div class="card-title">Dandara</div>
+            <div class="card-body">Long Hat House (BH) — plataforma de ação com mecânica de gravidade inovadora. Premiado mundialmente.</div>
+          </div>
+          <div class="card">
+            <span class="card-icon">🎲</span>
+            <div class="card-title">Knights of Pen and Paper</div>
+            <div class="card-body">Behold Studios (Curitiba) — RPG com humor e referências à cultura geek. Série de sucesso internacional.</div>
+          </div>
+          <div class="card">
+            <span class="card-icon">🦸</span>
+            <div class="card-title">Chroma Squad</div>
+            <div class="card-body">Behold Studios — estratégia inspirada nos Super Sentai/Power Rangers. Meta e criativo.</div>
+          </div>
+        </div>
+      </div>
 
-      <h3>Gran Turismo (GT Sophy)</h3>
-      <p>A atualização de 2023 introduziu o GT Sophy, um agente de corrida com comportamento mais humano, capaz de disputar corridas de forma natural e desafiadora.</p>
-    </section>
+      <div class="section">
+        <div class="section-title">Comparativo geral</div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Jogo</th>
+                <th>Tipo de IA</th>
+                <th>Destaque técnico</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Minecraft</strong></td><td><span class="badge badge-green">Procedural</span></td><td>Mundos matematicamente únicos</td></tr>
+              <tr><td><strong>The Sims</strong></td><td><span class="badge badge-blue">NPCs Autônomos</span></td><td>Sistema de necessidades e humor</td></tr>
+              <tr><td><strong>F.E.A.R.</strong></td><td><span class="badge badge-purple">GOAP Tático</span></td><td>Inimigos com planejamento real</td></tr>
+              <tr><td><strong>Alien: Isolation</strong></td><td><span class="badge badge-red">Adaptativa</span></td><td>Duas IAs em paralelo</td></tr>
+              <tr><td><strong>Shadow of Mordor</strong></td><td><span class="badge badge-purple">Sistema Nemesis</span></td><td>Inimigos com memória persistente</td></tr>
+              <tr><td><strong>No Man's Sky</strong></td><td><span class="badge badge-green">Procedural</span></td><td>18 quintilhões de planetas</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
 
-    <!-- SEÇÃO 2: Jogos famosos sem IA avançada -->
-    <section>
-      <h2>Games famosos sem IA avançada</h2>
-      <p>Nem todo jogo famoso depende de IA complexa. Muitos títulos se tornaram ícones usando mecânicas simples e criatividade:</p>
+    </main>
 
-      <table border="1" width="100%">
-        <thead>
-          <tr>
-            <th colspan="3">Games clássicos com IA simples</th>
-          </tr>
-          <tr>
-            <th>Jogo</th>
-            <th>Como funciona</th>
-            <th>Por que é famoso</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Tetris (1984)</td>
-            <td>Peças caem aleatoriamente, sem IA real</td>
-            <td>Design simples e viciante</td>
-          </tr>
-          <tr>
-            <td>Super Mario Bros. (1985)</td>
-            <td>Inimigos seguem padrões fixos</td>
-            <td>Level design e jogabilidade perfeitos</td>
-          </tr>
-          <tr>
-            <td>Doom (1993)</td>
-            <td>Inimigos perseguem o jogador por ângulo</td>
-            <td>Pioneiro do FPS moderno</td>
-          </tr>
-          <tr>
-            <td>Pokémon (1996)</td>
-            <td>Oponentes seguem regras de tipo e dano</td>
-            <td>Sistema de batalha estratégico</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <td colspan="3">Fonte: IA Games — Enzo 5165527</td>
-          </tr>
-        </tfoot>
-      </table>
-    </section>
+    <footer class="page-footer">
+      <p>Enzo William Coelho Fortes · RA: 5165527 · Engenharia de Computação · Uniube</p>
+    </footer>
+  </div>
+</div>
 
-    <!-- SEÇÃO 3: Games brasileiros -->
-    <section>
-      <h2>Games brasileiros em destaque</h2>
-      <p>O Brasil também tem uma cena de desenvolvimento de games crescente. Veja alguns títulos nacionais reconhecidos:</p>
-
-      <ul>
-        <li><strong>Horizon Chase Turbo</strong> — jogo de corrida inspirado nos clássicos dos anos 90, desenvolvido pela Aquiris Game Studio (Porto Alegre)</li>
-        <li><strong>Dandara</strong> — plataforma de ação com mecânicas inovadoras de gravidade, desenvolvido pela Long Hat House (Belo Horizonte)</li>
-        <li><strong>Knights of Pen and Paper</strong> — RPG com humor e referências à cultura geek, desenvolvido pela Behold Studios (Curitiba)</li>
-        <li><strong>Chroma Squad</strong> — jogo de estratégia inspirado nos Super Sentai/Power Rangers, também da Behold Studios</li>
-      </ul>
-
-      <p>Esses jogos mostram que o Brasil tem talento para criar experiências únicas, mesmo sem os grandes orçamentos das produtoras internacionais.</p>
-    </section>
-
-    <!-- SEÇÃO 4: Comparativo -->
-    <section>
-      <h2>Comparativo geral</h2>
-      <table border="1" width="100%">
-        <thead>
-          <tr>
-            <th>Jogo</th>
-            <th>Tipo de IA</th>
-            <th>Destaque</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Minecraft</td>
-            <td>Geração procedural</td>
-            <td>Mundos infinitos</td>
-          </tr>
-          <tr>
-            <td>The Sims</td>
-            <td>IA autônoma</td>
-            <td>Personagens com vida própria</td>
-          </tr>
-          <tr>
-            <td>F.E.A.R.</td>
-            <td>IA tática</td>
-            <td>Inimigos com estratégia</td>
-          </tr>
-          <tr>
-            <td>Alien: Isolation</td>
-            <td>IA adaptativa</td>
-            <td>Aprende com o jogador</td>
-          </tr>
-          <tr>
-            <td>Shadow of Mordor</td>
-            <td>Sistema Nemesis</td>
-            <td>Inimigos com memória</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-  </main>
-
-  <footer>
-    <p>Enzo William Coelho Fortes- RA: 5165527.<br>
-    Aluno do curso de Engenharia de Computação da Uniube.</p>
-  </footer>
-
+<script src="../js/sidebar.js"></script>
+<script>injectSidebar('exemplos');</script>
 </body>
 </html>
