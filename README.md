@@ -23,5 +23,5 @@ O sistema foi desenvolvido com foco em organização, usabilidade e boas prátic
 - JavaScript
 - Git
 - GitHub
-
+    
 ---
